@@ -6,19 +6,17 @@
   "scripts": {
     "test": "jest",
     "start": "node index.js",
-     "lint": "npx eslint "
+    "lint": "npx eslint "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "express": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^9.32.0",
     "jest": "^30.0.5"
-  },
-
-  "types": "module"
+  }
 }
