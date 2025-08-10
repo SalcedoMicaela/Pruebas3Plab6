@@ -10,6 +10,9 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Imprimir mensaje
+        run: echo "Hola, este es un workflow simple que corre al hacer push" 
+        
       - name: Clonar repositorio
         uses: actions/checkout@v4
 
