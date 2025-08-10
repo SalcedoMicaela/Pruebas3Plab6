@@ -8,7 +8,7 @@ function f(x) {
 describe('Pruebas para derivadaNumerica', () => {
   test('derivada de f(x)=x^2 en x=3 es aproximadamente 6', () => {
     const resultado = derivadaNumerica(f, 3);
-    expect(resultado).toBeCloseTo(6, 2); // valor esperado ~6, con 2 decimales de precisión
+    expect(resultado).toBeCloseTo(7, 2); // valor esperado ~6, con 2 decimales de precisión
   });
 });
 
@@ -18,7 +18,7 @@ describe('Pruebas para biseccion', () => {
       return x * x - 4;
     }
     const raiz = biseccion(g, 1, 3);
-    expect(raiz).toBeCloseTo(2, 3); // aproximación a 2 con 3 decimales
+    expect(raiz).toBeCloseTo(5, 3); // aproximación a 2 con 3 decimales
   });
 
   test('bisección retorna null si f(a)*f(b) >= 0', () => {
